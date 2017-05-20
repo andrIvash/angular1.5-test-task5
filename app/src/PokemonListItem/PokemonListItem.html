@@ -1,8 +1,10 @@
 
-    <a href="#!/pokemons/{{$ctrl.pokemon.objectId }}" class="list-group-item">
-
-        <h4>
-            {{$ctrl.pokemon.name | uppercase }}
-        </h4>
-
+    <a href="#!/pokemons/{{$ctrl.pokemon.objectId }}" >
+       <img src={{$ctrl.pokemon.sprites.front_default}} class="md-avatar">
+        <span>{{$ctrl.pokemon.name | uppercase }}</span>
+        <div class="md-list-item-text" layout="column">
+            <p>id: {{$ctrl.pokemon.objectId}}</p>
+            <p>weight: {{$ctrl.pokemon.weight}}</p>
+        </div>
+        <hr />
     </a>
